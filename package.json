@@ -31,7 +31,6 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
     "*": "prettier --ignore-unknown --write",
-    "*.css": "stylelint",
-    "*.scss": "stylelint --syntax=scss"
+    "*.css": "stylelint"
   }
 }
