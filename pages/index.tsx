@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
+import logger from "../logger/logger";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -9,7 +10,7 @@ const Home: NextPage = () => {
     fetch("api/hello")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        logger.info(data);
       });
   }, []);
 
