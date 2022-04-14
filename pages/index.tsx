@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     fetch("api/hello")
       .then((res) => res.json())
       .then((data) => {
-        logger.info(data);
+        logger.info(data, "API response received");
       });
   }, []);
 
