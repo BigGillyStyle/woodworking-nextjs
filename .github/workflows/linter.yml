@@ -39,10 +39,21 @@ jobs:
       # Checkout the code base #
       ##########################
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
+
+      ##########################################
+      # Install dependencies needed for ESLint #
+      ##########################################
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.14.2"
+          cache: "npm"
+      - name: Install NPM packages
+        run: npm ci
 
       ################################
       # Run Linter against code base #
