@@ -33,8 +33,8 @@ export default function handler(
   }
 
   const {
-    body: { _type, manufacturer, model },
+    body: { _type, manufacturerName, model },
   } = req;
-  logger.info({ _type, manufacturer, model }, "Received /api/hooks/sanity");
+  logger.info({ _type, manufacturerName, model }, "Received /api/hooks/sanity");
   res.json({ success: true });
 }
