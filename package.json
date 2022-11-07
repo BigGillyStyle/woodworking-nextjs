@@ -21,7 +21,7 @@
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.14",
     "eslint": "8.26.0",
-    "eslint-config-next": "^13.0.1",
+    "eslint-config-next": "^13.0.2",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
