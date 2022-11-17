@@ -1,18 +1,18 @@
-version: 2
-updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "saturday"
-      time: "03:00"
-      timezone: "US/Mountain"
+# version: 2
+# updates:
+#   - package-ecosystem: "npm"
+#     directory: "/"
+#     schedule:
+#       interval: "weekly"
+#       day: "saturday"
+#       time: "03:00"
+#       timezone: "US/Mountain"
 
-# Enable version updates for Github Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "saturday"
-      time: "03:00"
-      timezone: "US/Mountain"
+# # Enable version updates for Github Actions
+#   - package-ecosystem: "github-actions"
+#     directory: "/"
+#     schedule:
+#       interval: "weekly"
+#       day: "saturday"
+#       time: "03:00"
+#       timezone: "US/Mountain"
